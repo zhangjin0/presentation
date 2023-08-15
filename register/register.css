@@ -1,0 +1,28 @@
+.register{
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#name,#email,#password{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#register-button{
+    width: 100%;
+    padding: 10px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+
+}
