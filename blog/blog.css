@@ -1,0 +1,33 @@
+header {
+    background-color: #9dd4c1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Borel', cursive;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: space-around;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+.menu form {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="blog_edit.css">
+    <link rel="stylesheet" href="blog_header.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="" class="name" ></a>
+        </div>
+        <div>
+            <button class="menu" type="button">menu</button>
+            <ul>
+                <li class="menu_item"><a href="">Home</a></li>
+                <li class="menu_item"><a href="">ブログ登録</a></li>
+                <li class="menu_item"><a href="">ブログ削除</a></li>
+                <li class="menu_item"><a href="">Logout</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <section class="blog_register_section">
+            <h2></h2>
+            <div class="register_form">
+                <form action="" method="post">
+                <div class="register_input">
+                    <div>日付</div>
+                    <input type="date" name="registerDate">
+                </div>
+                <div class="register_input">
+                    <div>カテゴリ</div>
+                    <input type="text" name="category">
+                </div>
+                <div class="register_input">
+                    <div>画像</div>
+                    <input type="file" name="blogImage">
+                </div>
+                <div class="register_input">
+                    <div>詳細</div>
+                    <textarea name="blogDetail" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="register_input">
+                    <button class="add">登録</button>
+                    <button class="back">戻る</button>
+
+                </div>
+            </form>
+
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

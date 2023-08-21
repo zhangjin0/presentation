@@ -1,0 +1,17 @@
+main{
+    list-style: none;
+    display: flex;
+    padding: 50;
+    margin: 50;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.add, .back {
+    padding: 5px 10px;
+    background-color: #8db2da; /* 蓝色背景颜色 */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
