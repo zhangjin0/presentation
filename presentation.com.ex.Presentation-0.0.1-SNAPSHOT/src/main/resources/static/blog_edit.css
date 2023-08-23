@@ -1,0 +1,30 @@
+main{
+    list-style: none;
+    display: flex;
+    padding: 50;
+    margin: 50;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.add, .back {
+    padding: 5px 10px;
+    background-color: #8db2da; /* 蓝色背景颜色 */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.register_input img {
+    max-width: 20%; /* 将图像的宽度限制为其容器的大小 */
+    height: auto; /* 保持宽高比 */
+    margin-bottom: 10px;
+}
+
+
+
+
+

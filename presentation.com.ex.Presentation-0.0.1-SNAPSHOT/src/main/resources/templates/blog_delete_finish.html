@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/blog_header.css}">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="" class="name" ></a>
+        </div>
+        <div>
+            <button class="menu" type="button">menu</button>
+            <ul>
+                <li class="menu_item"><a th:href="@{/account/blog/all}">Home</a></li>
+                <li class="menu_item"><a th:href="@{/account/blog/register}">ブログ登録</a></li>
+                <li class="menu_item"><a th:href="@{/account/blog/logout}">Logout</a></li>
+            </ul>
+        </div>
+        </header>
+        <main>
+            <section class="blog_delete_section">
+                <h2>ブログの削除が完了しました</h2>
+                <div class="blog_list_flex">
+          
+                        <a th:href="@{/account/blog/all}"&nbsp;&nbsp;&nbsp;&laquo;&nbsp;メニューへ戻る</a>
+                            <div class="blog-colum-category">
+                               
+                            </div>
+                          
+                            </div>
+                      
+                    </article>
+
+
+                </div>
+
+            </section>
+        </main>
+
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+.container{
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    
+}
+
+#email,#password{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+#submit-button{
+    width: 100%;
+    padding: 10px;
+    background-color: green;
+    color: aliceblue;
+    border-radius: 8px;
+    
+}

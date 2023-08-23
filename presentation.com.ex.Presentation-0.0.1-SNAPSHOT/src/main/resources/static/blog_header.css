@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c4e5a0;
+    color: #fff;
+    padding: 10px 20px;
+}
+.name {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #0d0c0c;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 999;
+}
+.menu_item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 50px;
+}
+
+.blog-topic-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.blog-topic-article img {
+    max-width: 50%; /* 将图像的宽度限制为其容器的大小 */
+    height: auto; /* 保持宽高比 */
+    margin-bottom: 10px;
+}
+
+
+

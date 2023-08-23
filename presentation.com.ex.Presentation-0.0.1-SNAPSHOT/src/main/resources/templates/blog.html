@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/blog.css}">
+</head>
+<body>
+    <header>
+        <div class="blog">
+        <h1>WELCOME TO MY blog</h1>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Open+Sans:ital@1&family=Yatra+One&display=swap" rel="stylesheet">
+        <a href=""></a>
+        </div>
+    </header>
+    <main>
+    <div class="container">
+        <ul>
+            <li class="menu"><a th:href="@{/account/blog/register}">新規記事登録</a></li>
+            <li class="menu"><a th:href="@{/account/blog/logout}">ログアウト</a></li>
+        </ul>
+        <section class="blog-list-section">
+			<h2>Blog List</h2>
+			<div class="blog-list-flex">
+				<article class="blog-topic-article" th:each="blog:${blogList}">
+					<a th:href="@{/account/blog/edit/{blogId}(blogId=${blog.blogId})}" class="blog-colum">
+						<img th:src="@{/blog-img/{items}(items=${blog.blogImage})}">
+						<div class="colum__box">
+							<p th:text="${#temporals.format(blog.blogDate, 'yyyy/MM/dd')}"></p>
+							<p th:text=" ${blog.blogTitle}"></p>
+						</div>
+					</a>
+				</article>
+			</div>
+		</section>
+		<div class="introduction">
+            <p>Hello, I'm ZHANG JIN. Welcome to my blog! I'm passionate about IT, and I'll be sharing my thoughts and insights here. Feel free to explore and engage with the content.</p>
+        </div>
+       
+
+
+    </div>
+</main>
+</body>
+</html>

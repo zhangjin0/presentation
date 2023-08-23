@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/register.css}">
+</head>
+<body>
+    <div class="register">
+        <form th:action="@{/register/process}" method="post">
+            <h1>登録画面</h1>
+            <label for="name">name</label>
+            <input type="text" name="accountName" id="name" placeholder="nameを入力して下さい">
+           
+            <label for="email">email</label>
+            <input type="text" name="accountEmail" id="email" placeholder="emailを入力して下さい">
+          
+            <label for="password">password</label>
+            <input type="password" name="accountPassword" id="password" placeholder="passwordを入力して下さい">
+         
+            <input type="submit" value="登録" id="register-button">
+           
+           
+        </form>
+
+    </div>
+    
+</body>
+</html>

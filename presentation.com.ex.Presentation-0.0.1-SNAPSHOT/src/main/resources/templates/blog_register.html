@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" th:href="@{/blog_edit.css}">
+    <link rel="stylesheet" th:href="@{/blog_header.css}">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="#" class="name" th:text="${accountName}"></a>
+        </div>
+        <div>
+            <button class="menu" type="button">menu</button>
+            <ul>
+                <li class="menu_item"><a th:href="@{/account/blog/all}">Home</a></li>
+                <li class="menu_item"><a th:href="@{/account/blog/register}">ブログ登録</a></li>
+                <li class="menu_item"><a th:href="@{/account/blog/logout}">Logout</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <section class="blog_register_section">
+            <div class="register_form">
+               
+                <form th:action="@{/account/blog/register/process}" method="post" enctype="multipart/form-data">
+                 <div class="register_input">
+                    <div>タイトル</div>
+                    <input type="text" name="blogTitle">
+                </div>
+                
+                <div class="register_input">
+                    <div>日付</div>
+                    <input type="date" name="blogDate">
+                </div>
+                <div class="register_input">
+                    <div>カテゴリ</div>
+                    <input type="text" name="blogCategory">
+                </div>
+                <div class="register_input">
+                    <div>画像</div>
+                    <input type="file" name="blogImage">
+                </div>
+                <div class="register_input">
+                    <div>詳細</div>
+                    <textarea name="blogDetail" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="register_input">
+                    <button class="add">登録</button>
+                    <button class="back" type="button" onclick="history.back();">戻る</button>
+
+                </div>
+            </form>
+
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

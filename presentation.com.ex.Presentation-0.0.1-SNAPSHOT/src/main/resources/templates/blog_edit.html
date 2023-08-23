@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" th:href="@{/blog_header.css}">
+	<link rel="stylesheet" th:href="@{/blog_edit.css}">
+</head>
+
+<body>
+	<header class="header">
+		<div>
+			<a href="#" class="name" th:text="${accountName}"></a>
+		</div>
+		<div>
+			<button class="menu" type="button">menu</button>
+			<ul>
+				<li class="menu_item"><a th:href="@{/account/blog/all}">Home</a></li>
+				<li class="menu_item"><a th:href="@{/account/blog/register}">ブログ登録</a></li>
+				<li class="menu_item"><a th:href="@{/account/blog}">Logout</a></li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<section class="blog_">
+
+		</section>
+	</main>
+	<section class="blog_register_section">
+		<h2>記事編集</h2>
+		<div class="register_form">
+			<form th:action="@{/account/blog/edit}" method="post">
+				<div class="register_input">
+					<div>タイトル</div>
+					<input type="text" name="blogTitle" th:value="${blogList.blogTitle}">
+				</div>
+				<div class="register_input">
+					<div>日付</div>
+					<input type="date" name="blogDate" th:value="${blogList.blogDate}">
+				</div>
+				<div class="register_input">
+					<div>カテゴリ</div>
+					<input type="text" name="blogCategory" th:value="${blogList.blogCategory}">
+				</div>
+				<div class="register_input">
+					<div>画像</div>
+					<img th:src="@{/blog-img/{items}(items=${blogList.blogImage})}">
+				</div>
+				<div class="register_input">
+					<div>詳細</div>
+					<textarea name="blogDetail" id="" cols="30" rows="10" th:text="${blogList.blogDetail}"></textarea>
+				</div>
+				<input type="hidden" name="blogId" th:value="${blogList.blogId}">
+				<div class="edit-button">
+					<button class="change">変更</button>
+					<button class="back" type="button" onclick="history.back();">戻る</button>
+
+			</form>
+			<form th:action="@{/account/blog/delete}" method="post">
+				<div class="edit-section-details_flex">
+					<input type="hidden" name="blogId" th:value="${blogList.blogId}">
+					<button class="register">削除</button>
+				</div>
+			</form>
+		</div>
+
+
+
+</body>
+
+</html>
